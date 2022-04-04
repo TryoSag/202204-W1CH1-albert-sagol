@@ -1,0 +1,273 @@
+:root{
+    --rotation: calc(360deg / 27);
+    --box-size: 400px;
+}
+.body{
+    margin: 0px;
+}
+.container{
+    height: auto;
+    width: auto;
+    background-color: grey;
+    border: 2px solid black;
+}
+.title_page{
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    text-shadow: 3px;
+    padding: 20px;
+}
+.block_question_timer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.text_question{
+    margin: 0px 25px 0px auto;
+    width: 500px;
+    height: 40px;
+    padding: 5px 0px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    text-align: center;
+}
+.text_timer{
+    margin: 0px auto 25px 0px;
+    width: 50px;
+    height: 30px;
+    padding: 5px 0px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 20px;
+}
+.to_enter{
+    margin: 0 auto;
+    width: 230px;
+    height: 40px;
+    padding: 10px 0px;
+}
+.title_rules{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.rules{
+    margin: 0 auto;
+    width: 550px;
+    height: 80px;
+    text-align: left;
+    list-style-type: none;
+    background-color: lightgrey;
+    border: 2px solid black;
+    padding: 5px 20px;
+}
+.title_ranking{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.ranking{
+    margin: 0 auto;
+    text-align: center;
+}
+.letters{
+    margin: 0 auto;
+    position: relative;
+    width: var(--box-size);
+    height: var(--box-size);
+    padding: 30px;
+}
+.letters li{
+    background-color: dodgerblue;
+    border: 2px solid white;
+    border-radius: 45%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+    display : block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 50%; 
+    left: 50%;
+    margin: -12.5px;
+    padding: 0px;
+}
+.letters li.right{
+    background-color: green;
+}
+.letters li.wrong{
+    background-color: red;
+}
+.letters li.actual{
+    background-color: blue;
+}
+.letter_a{ 
+    --position: 0;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_b{ 
+    --position: 1;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_c{ 
+    --position: 2;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_d{ 
+    --position: 3;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_e{ 
+    --position: 4;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_f{ 
+    --position: 5;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_g{ 
+    --position: 6;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+
+.letter_h{ 
+    --position: 7;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_i{ 
+    --position: 8;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_j{ 
+    --position: 9;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_k{ 
+    --position: 10;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_l{ 
+    --position: 11;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_m{ 
+    --position: 12;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_n{ 
+    --position: 13;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_ñ{ 
+    --position: 14;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_o{ 
+    --position: 15;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_p{ 
+    --position: 16;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_q{ 
+    --position: 17;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_r{ 
+    --position: 18;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_s{ 
+    --position: 19;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_t{ 
+    --position: 20;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_u{ 
+    --position: 21;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_v{ 
+    --position: 22;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_w{ 
+    --position: 23;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_x{ 
+    --position: 24;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+.letter_y{ 
+    --position: 25;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
+
+.letter_z{ 
+    --position: 26;
+    transform: rotate(calc(var(--rotation) * var(--position) - 90deg)) 
+        translate(calc(var(--box-size) / 2)) 
+        rotate(calc( var(--rotation) * var(--position) * -1 + 90deg));
+}
